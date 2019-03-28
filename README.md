@@ -2,6 +2,8 @@
 
 Simple command line interfaces.
 
+This is a for from: https://github.com/robmerrell/comandante 
+
 [Example App](http://github.com/robmerrell/comandante_example)
 
 
