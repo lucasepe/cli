@@ -55,7 +55,7 @@ func (c *Tool) Run() error {
 	if err != nil {
 		return err
 	}
-	
+
 	if cmdName == "--help" || cmdName == "-h" {
 		c.printDefaultHelp(os.Stderr)
 		return nil
