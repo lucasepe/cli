@@ -65,9 +65,9 @@ func (c *Tool) Run() error {
 			flag.Parse()
 			err = cmd.flagSet.Parse(flag.Args()[1:])
 			if err != nil {
-				return err
+				return nil
 			}
-			
+
 			if cmd.FlagPostParse != nil {
 				cmd.FlagPostParse(&cmd.flagSet)
 			}
