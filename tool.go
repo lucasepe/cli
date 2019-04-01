@@ -52,7 +52,11 @@ func (c *Tool) RegisterCommand(cmd *Command) error {
 // the command in the case that one is found.
 func (c *Tool) Run() error {
 	cmdName, err := getCmdName(os.Args)
-	if err != nil || cmdName == "--help" || cmdName == "-h" {
+	if err != nil {
+		return err
+	}
+	
+	if cmdName == "--help" || cmdName == "-h" {
 		c.printDefaultHelp(os.Stderr)
 		return nil
 	}
