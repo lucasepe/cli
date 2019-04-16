@@ -155,7 +155,7 @@ func getCmdName(args []string) (string, error) {
 var usage = `{{.BinaryDescription}}
 
 Usage:
-	{{.BinaryName}} command [arguments]
+	{{.BinaryName}} command
 
 Available commands: {{ range .Commands}}
 {{.PaddedName}}  {{.Description}}{{ end }}

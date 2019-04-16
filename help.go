@@ -17,12 +17,13 @@ func createHelpCommand(tool *Tool, w io.Writer) *Command {
 			cmd := tool.getCommand(cmdName)
 
 			if cmd != nil && cmdName != "help" {
-				fmt.Fprintf(w, "%s %s\n%s", tool.binaryName, cmdName, cmd.Documentation)
+				//fmt.Fprintf(w, "%s %s\n%s", tool.binaryName, cmdName, cmd.Documentation)
+				fmt.Fprintf(w, "%s", cmd.Documentation)
 
 				if cmd.FlagInit != nil {
 					cmd.FlagInit(&cmd.flagSet)
 
-					fmt.Fprintf(w, "\noptions\n")
+					fmt.Fprintf(w, "\nOptions:\n")
 
 					cmd.flagSet.SetOutput(w)
 					cmd.flagSet.PrintDefaults()
