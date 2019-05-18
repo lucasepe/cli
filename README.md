@@ -6,7 +6,6 @@ This is a for from: https://github.com/robmerrell/comandante
 
 [Example App](http://github.com/robmerrell/comandante_example)
 
-
 ## What is CLI
 
 Many command line tools are structured to accept subcommands. Like the go tool. When you run the go command you are presented with help 
