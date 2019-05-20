@@ -9,8 +9,7 @@ This is a fork from: https://github.com/robmerrell/comandante
 ## What is CLI
 
 Many command line tools are structured to accept subcommands. Like the go tool. When you run the go command you are presented with help 
-text listing the available subcommands. Each subcommand has its own command line flags and documentation. CLI makes creating binaries 
-with subcommands easy.
+text listing the available subcommands. Each subcommand has its own command line flags and documentation. CLI makes creating binaries with subcommands easy.
 
 So what does CLI look like? Let's say that you are creating a program called "coolbinary" with two subcommands: "sayhi" and "demo". 
 If you were to run coolbinary without a subcommand 
